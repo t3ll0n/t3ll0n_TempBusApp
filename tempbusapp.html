@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Temp Bus App</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/master.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<style>
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+	color: white; // In yourUse @body-bg
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}
+}
+	</style>
+</head>
+<body>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<div class="container">
+	    <div class="row">
+			<div class="col-sm-3 col-md-3">
+	            <div class="well">
+	        		<h2 class="text-muted">Silver</h2>
+	        		<p><span class="label label-default">POPULAR</span></p>
+	        		<ul>
+	        			<li>10 users</li>
+	        			<li>Unlimited access</li>
+	        			<li>3TB of space</li>
+	        			<li>E-mail support</li>
+	        		</ul>
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+	        		<hr>
+	        		<h3>$15.99 / month</h3>
+	        		<hr>
+	        		<p><a class="btn btn-default btn-lg" href="#"><i class="icon-ok"></i> Select plan</a></p>
+	        	</div>
+	        </div>
+	        <div class="col-sm-3 col-md-3">
+	        	<div class="well">
+	        		<h2 class="text-warning">Bronze</h2>
+	        		<p><span class="label label-success">POPULAR</span></p>
+	        		<ul>
+	        			<li>20 users</li>
+	        			<li>Unlimited access with no limits</li>
+	        			<li>5TB of space</li>
+	        		</ul>
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+	        		<hr>
+	        		<h3>$10.99 / month</h3>
+	        		<hr>
+	        		<p><a class="btn btn-success btn-lg" href="#"><i class="icon-ok"></i> Select plan</a></p>
+	        	</div>
+	        </div>
+	        <div class="col-sm-3 col-md-3">
+	        	<div class="well">
+	        		<h2 class="text-info">Economy</h2>
+	        		<p><span class="label label-info">BUDGET</span></p>
+	        		<ul>
+	        			<li>10 users</li>
+	        			<li>5TB of space</li>
+	        		</ul>
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+	        		<hr>
+	        		<h3>$8.99 / month</h3>
+	        		<hr>
+	              <p><a class="btn btn-default btn-lg" href="#"><i class="icon-ok"></i> Select plan</a></p>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+</body>
+</html>
